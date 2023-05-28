@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "nama": "Jupiter Tactile 60g",
+        "gambar": "ini gambarnya",
+        "kategori": "Keyboard Acc",
+        "stok": 50,
+        "terjual": 100000,
+        "restock": 31,
+        "peminat": 542,
+        "hargaJual": 4200,
+        "hargaBeli": 3000
+    },
+    {
+        "id": 2,
+        "nama": "Raiden Shogun",
+        "gambar": "ini gambarnya",
+        "kategori": "Keycaps",
+        "stok": 20,
+        "terjual": 50,
+        "restock": 12,
+        "peminat": 54,
+        "hargaJual": 389000,
+        "hargaBeli": 250000
+    },
+    {
+        "id": 3,
+        "nama": "Kuronami Gaming Mousepad",
+        "gambar": "ini gambarnya",
+        "kategori": "Mousepad",
+        "stok": 21,
+        "terjual": 223,
+        "restock": 24,
+        "peminat": 112,
+        "hargaJual": 249000,
+        "hargaBeli": 180000
+    },
+    {
+        "id": 4,
+        "nama": "Wooden Keyboard Stand Holder",
+        "gambar": "ini gambarnya",
+        "kategori": "Keyboard Acc",
+        "stok": 50,
+        "terjual": 40,
+        "restock": 45,
+        "peminat": 21,
+        "hargaJual": 180000,
+        "hargaBeli": 100000
+    },
+    {
+        "id": 5,
+        "nama": "Edo Series Gaming Mousepad",
+        "gambar": "ini gambarnya",
+        "kategori": "Mousepad",
+        "stok": 32,
+        "terjual": 50,
+        "restock": 21,
+        "peminat": 37,
+        "hargaJual": 249000,
+        "hargaBeli": 180000
+    },
+    {
+        "id": 6,
+        "nama": "Nova Wireless Gaming Mouse",
+        "gambar": "ini gambarnya",
+        "kategori": "Mouse",
+        "stok": 45,
+        "terjual": 124,
+        "restock": 12,
+        "peminat": 287,
+        "hargaJual": 319000,
+        "hargaBeli": 250000
+    }
+]
