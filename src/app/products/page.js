@@ -7,7 +7,7 @@ const Products = async () => {
   const productsData = await getAllProducts()
 
   return (
-    <div className='mx-auto w-full pl-[208px]'>
+    <div className='mx-auto w-full pl-[208px] mb-24'>
       <div className="product-card-wrapper mx-auto w-[904px] grid grid-cols-4 gap-6">
 
         <p className='col-span-full mt-24'>
