@@ -33,7 +33,7 @@ const Products = async () => {
 
         <div className='col-span-full flex justify-between mt-12'>
           <p className='font-bold'>Daftar Produk</p>
-          <button className='flex bg-hitam font-bold text-white px-[22px] py-2 gap-2 justify-center rounded-lg'>
+          <button className='flex bg-hitam font-bold text-white transition duration-150 hover:text-jingga-1 px-[22px] py-2 gap-2 justify-center rounded-lg'>
               <Link href='products/pilih-aksi'>Buat Keputusan</Link>
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />

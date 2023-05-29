@@ -1,6 +1,7 @@
 'use client'
 
 import React, { useState, useEffect } from 'react'
+import Image from 'next/image';
 
 const ProductCard = ({props}) => {
 
@@ -20,8 +21,6 @@ const ProductCard = ({props}) => {
       let updatedData = JSON.stringify(dataArray);
       localStorage.setItem("alternatives", updatedData);
       setAdded(1)
-      console.log('ditambahkan')
-
     } else {
       let myArray = JSON.parse(localStorage.getItem("alternatives"));
       myArray = myArray.filter((element) => element.id !== produk.id);
@@ -32,7 +31,7 @@ const ProductCard = ({props}) => {
 
   return (
     <div className={added ? 'h-[446px] relative rounded-lg transition duration-200 bg-abu-2 cursor-pointer' : 'h-[446px] relative rounded-lg transition duration-200 hover:bg-abu-3 cursor-pointer'} onClick={() => addAlternative(props)}>
-        <div className="image w-[208px] h-[208px] bg-abu-1 rounded-t-lg">{props.gambar}</div>
+        <Image src={'https://drive.google.com/uc?export=view&id=' + props.gambar} width={208} height={208} alt='product-image'></Image>
         <div className="product-desc w-[208px] p-4">
             <p className='my-1'>{props.nama}</p>
             <p className='font-bold my-1'>Rp{new Intl.NumberFormat('id-ID').format(props.hargaJual)}</p>
