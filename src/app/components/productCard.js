@@ -1,9 +1,14 @@
 'use client'
 
-import React, { useState } from 'react'
-import Image from 'next/image'
+import React, { useState, useEffect } from 'react'
 
 const ProductCard = ({props}) => {
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      window.localStorage.clear();
+    }
+  }, []);
 
   const [added, setAdded] = useState(0)
 
@@ -26,7 +31,7 @@ const ProductCard = ({props}) => {
   }
 
   return (
-    <div className={added ? 'h-[446px] relative rounded-lg transition duration-200 bg-abu-2' : 'h-[446px] relative rounded-lg transition duration-200 hover:bg-abu-3'} onClick={() => addAlternative(props)}>
+    <div className={added ? 'h-[446px] relative rounded-lg transition duration-200 bg-abu-2 cursor-pointer' : 'h-[446px] relative rounded-lg transition duration-200 hover:bg-abu-3 cursor-pointer'} onClick={() => addAlternative(props)}>
         <div className="image w-[208px] h-[208px] bg-abu-1 rounded-t-lg">{props.gambar}</div>
         <div className="product-desc w-[208px] p-4">
             <p className='my-1'>{props.nama}</p>
