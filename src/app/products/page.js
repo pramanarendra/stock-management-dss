@@ -1,8 +1,6 @@
 import React from 'react'
 import getAllProducts from '../lib/getAllProducts'
 import ProductCard from '../components/productCard'
-import ActionModal from '../components/actionModal'
-import getAllModels from '../lib/getAllModels'
 import Link from 'next/link'
 
 const Products = async () => {
@@ -50,11 +48,6 @@ const Products = async () => {
         })}
       </div>
 
-      {/* <div className="fixed left-0 top-0 overlay block w-full h-full bg-abu-3/50 z-10"></div>
-
-      <div className="fixed pl-[208px] top-1/4 left-0 mx-auto w-full mb-24 z-20">
-        <ActionModal props={actionData}/>
-      </div> */}
     </div>
   )
 }

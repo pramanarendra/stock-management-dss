@@ -3,10 +3,6 @@ import Link from 'next/link'
 
 const Navbar = () => {
 
-    // const removeAlternatives = () => {
-    //     localStorage.removeItem('alternatives');
-    // }
-
   return (
     <>
         <nav className='bg-hitam text-white h-screen fixed min-w-[288px] z-10'>

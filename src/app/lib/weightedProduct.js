@@ -9,7 +9,7 @@ export const countPreference = (alternatives, criterias) => {
                 temp = temp*Math.pow(alternatives[alternative][criteria], criterias[criteria][2]*criterias[criteria][1])
             }
         }
-        s.push(temp)
+        s.push({id: alternatives[alternative].id, s: temp})
     }
     return s
 }
@@ -18,13 +18,11 @@ const countFinalScore = (s) => {
     let finalScore = []
     let sum = 0
     s.forEach(element => {
-        sum += element
+        sum += element.s
     });
     
-    let i=1
     s.forEach(element => {
-        finalScore.push({id: i, score: (element/sum)})
-        i++;
+        finalScore.push({id: element.id, score: (element.s/sum)})
     });
     return finalScore
 }

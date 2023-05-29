@@ -7,20 +7,6 @@ const page = async () => {
     const actionData = await getAllModels()
 
   return (
-    // <div className='mx-auto w-full pl-[288px] mb-24 relative'>
-    //     <div className="pl-[120px] navigation mx-auto">
-    //         <p className='mx-auto'>
-    //         <span className='font-bold'>Manajemen Produk </span>
-    //         <span className='text-abu-1'>&gt; Pilih Aksi</span>
-    //         </p>
-    //         <p className='text-5xl font-bold'>Pilih Aksi</p>
-    //     </div>
-
-    //     <p>Pemilihan Aksi</p>
-    //     <p>Pilih aksi yang akan dijadikan sebagai dasar pembobotan kriteria</p>
-
-    //     <ActionModal props={actionData}/>
-    // </div>
     <div className='mx-auto w-full pl-[208px] mb-24 relative'>
         <div className="product-card-wrapper mx-auto w-[904px] grid grid-cols-4">
 

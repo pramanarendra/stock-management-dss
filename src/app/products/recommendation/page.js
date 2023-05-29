@@ -1,28 +1,38 @@
 'use client'
 
 import React, { useEffect, useState } from 'react'
-import weightedProduct from '@/app/lib/weightedProduct'
+import weightedProduct, { countPreference } from '@/app/lib/weightedProduct'
 
 const Recommendation = () => {
   
-  // const [ranks, setRanks] = useState([])
-  
   const alternatives = JSON.parse(localStorage.getItem('alternatives'))
   const model = JSON.parse(localStorage.getItem('model'))
+
+  console.log(alternatives)
 
   let peringkat = []
 
   const findProduct = (id, alternatives) => {
     let result = {}
     alternatives.forEach((alternative) => {
+      console.log(alternative)
         if(alternative.id == id) {
             result = alternative
+            // console.log(result)
         }
     })
     return result
   }
 
+  let preferences = countPreference(alternatives, model.kriteria)
+
+  for( const preference in preferences) {
+    console.log('preference: ' + preferences[preference].id)
+  }
+  
+
   peringkat = weightedProduct(model.kriteria, alternatives)
+  console.log(peringkat)
 
   return (
     <div className='mx-auto w-full pl-[208px] mb-24 relative'>

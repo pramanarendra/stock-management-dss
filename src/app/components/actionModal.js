@@ -6,7 +6,6 @@ import Link from 'next/link'
 const ActionModal = ({props}) => {
     
     const addModel = (model) => {
-        console.log(model)
         localStorage.removeItem("model");
         localStorage.setItem("model", JSON.stringify(model))
     }
